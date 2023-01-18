@@ -5,6 +5,6 @@ print(number, end=' ')
 if number == 0:
     print('is zero')
 if number > 0:
-    print('is postive')
+    print('is postive ')
 else:
     print('is negative')
