@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-number_str = repr(number)
+number_str = str(number)
 last_digit_str = number_str[-1]
 last = int(last_digit_str)
 if number < 0:
