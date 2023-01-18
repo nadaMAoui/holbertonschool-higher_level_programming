@@ -5,8 +5,8 @@ number_str = repr(number)
 last_digit_str = number_str[-1]
 last = int(last_digit_str)
 if number < 0:
-    try: last = last
-    except: last = -last
+    try: last = -last
+    except: last = last
 print("Last digit of {:d} is {:d} and is".format(number, last), end=' ')
 if last > 5:
     print("greater than 5")
