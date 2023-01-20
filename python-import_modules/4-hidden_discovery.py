@@ -3,8 +3,8 @@ import hidden_4
 
 
 def principal():
-    for j in dir(hidden_4):
-        if not (j[0] == '_' and j[1] == '_'):
+    for i in dir(hidden_4):
+        if not (i[0] == '_' and i[1] == '_'):
             print(i)
 
 
