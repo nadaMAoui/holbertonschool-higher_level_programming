@@ -1,5 +1,6 @@
 #!/usr/bin/python3
+""" define a class Square"""
 class Square:
-    """ a Square class """
-    def __init__(parameter):
+    """Represent a Square"""
+    def __init__(self):
         pass
