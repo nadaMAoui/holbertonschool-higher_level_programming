@@ -4,7 +4,7 @@
 
 class Square:
     """Class of the square"""
-    def __init__(self, size=0, position=(0, 0)): 
+    def __init__(self, size=0, position=(0, 0)):
         """Init self"""
         self.__size = size
         """Position of square"""
@@ -30,7 +30,7 @@ class Square:
 
     def my_print(self):
         if self.__size is 0:
-            print ()
+            print()
         else:
             print('\n' * self.position[1], end="")
             for i in range(self.size):
