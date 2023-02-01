@@ -6,11 +6,11 @@ class Square:
     """Represent a Square"""
     def __init__(self, size=0):
         self.__size = size
-
+    @property
     def size(self):
         """ size private attribute"""
         return (self.__size)
-
+    @size.setter
     def size(self, value):
         """type public attribute"""
         if type(value) is not int:
