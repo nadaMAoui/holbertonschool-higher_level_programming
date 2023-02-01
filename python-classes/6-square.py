@@ -9,9 +9,11 @@ class Square:
         self.__size = size
         """Position of square"""
         self.position = position
+
     @property
     def size(self):
         return self.__size
+
     @size.setter
     def size(self, value):
         """Sise of Square"""
@@ -33,9 +35,11 @@ class Square:
             for i in range(self.size):
                 print(" " * self.position[0], end="")
                 print("#" * self.size)
+
     @property
     def position(self):
         return self.__position
+
     @position.setter
     def position(self, value):
         if isinstance(value, tuple) is False:
