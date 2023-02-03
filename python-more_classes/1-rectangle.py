@@ -9,7 +9,7 @@ class Rectangle:
         """initi"""
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """ function returns width of rectangle"""
