@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+""" this is the main rectangle class """
+
+
 class Rectangle:
-    """ this is the main rectangle class """
-
-
     """ class Reactangle"""
     def __init__(self, width=0, height=0):
             self.width = width
