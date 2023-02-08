@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-"""main Class"""
-
-
 class Rectangle(__import__('7-base_geometry').BaseGeometry):
     """BaseGeometry Class"""
 
