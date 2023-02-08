@@ -2,7 +2,7 @@
 """main Class"""
 
 
-class BaseGeometry():
+class Rectangle(__import__('7-base_geometry').BaseGeometry):
     """BaseGeometry Class"""
 
     def area(self):
