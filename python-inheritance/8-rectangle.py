@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""main Class"""
+
+
 class Rectangle(__import__('7-base_geometry').BaseGeometry):
     """BaseGeometry Class"""
 
@@ -13,6 +16,8 @@ class Rectangle(__import__('7-base_geometry').BaseGeometry):
             raise TypeError("{} must be an integer".format(name))
         if(value <= 0):
             raise ValueError("{} must be greater than 0".format(name))
+
+"""inherited calss"""
 
 
 class Rectangle(BaseGeometry):
