@@ -17,12 +17,6 @@ class Rectangle(__import__('7-base_geometry').BaseGeometry):
         if(value <= 0):
             raise ValueError("{} must be greater than 0".format(name))
 
-"""inherited calss"""
-
-
-class Rectangle(BaseGeometry):
-    """rectangle class"""
-
     def __init__(self, width, height):
         """ init"""
         super().integer_validator("width", width)
