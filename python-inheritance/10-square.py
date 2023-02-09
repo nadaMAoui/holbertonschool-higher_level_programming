@@ -1,16 +1,11 @@
 #!/usr/bin/python3
-"""main Class"""
+"""main class"""
 
 
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
-"""BaseGeometry class"""
+class Square(__import__('9-rectangle').Rectangle):
+    """Class BaseGeometry"""
 
-Rectangle = __import__('9-rectangle').Rectangle
-"""Rectangle Class"""
-
-class Square(Rectangle):
     def __init__(self, size):
         """init"""
-        self().integer_validator("size", size)
-        super().__init__(size,size)
-        self.__size = size
+        super().integer_validator("size", size)
+        super().__init__(size, size)
