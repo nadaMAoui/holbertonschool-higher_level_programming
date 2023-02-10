@@ -19,4 +19,3 @@ finally:
     for arg in argv_edit:
         content_list.append(arg)
     save_to_json_file(content_list, "add_item.json")
-
