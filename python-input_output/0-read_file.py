@@ -4,9 +4,9 @@
 
 def read_file(filename=""):
     """
-    a function that reads a text 
+    a function that reads a text
     file (UTF8) and prints it to stdout
     """
-    with open(filename, mode = "r", encoding="UTF8") as My_File:
+    with open(filename, mode="r", encoding="UTF8") as My_File:
         for line in My_File:
             print(line, end='')
