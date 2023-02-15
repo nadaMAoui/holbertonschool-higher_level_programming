@@ -1,21 +1,28 @@
 #!/usr/bin/python3
 """
-model class that holds the base class to manager all
-the id attributes of all classesthat extend from the
-base class to avoid duplication of same code
+A model that contains a Base class to manage
+the id attribute of all classes that extend
+from Base and avoid duplicate the same code.
 """
 
+from os import path
+import json
 
-class Base(self):
-    """base classe"""
+
+class Base:
+    """
+    base class
+    """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """init"""
+        """
+        ...
+        """
 
-        if(id is None)
+        if id is None:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
         else:
-            self.id = id   
+            self.id = id
