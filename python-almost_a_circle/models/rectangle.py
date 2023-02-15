@@ -73,13 +73,11 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-
     def area(self):
         """
         calculate the area of rectangle
         """
         return self.width * self.height
-
 
     def display(self):
         """
@@ -90,14 +88,12 @@ class Rectangle(Base):
         for j in range(self.height):
             print(" " * self.x + "#" * self.width)
 
-
     def __str__(self):
         """
         overriding __str__ mthod
         """
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
             self.id, self.x, self.y, self.width, self.height)
-
 
     def update(self, *args, **kwargs):
         """
