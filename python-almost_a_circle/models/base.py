@@ -5,9 +5,6 @@ the id attribute of all classes that extend
 from Base and avoid duplicate the same code.
 """
 
-from os import path
-import json
-
 
 class Base:
     """
@@ -18,7 +15,7 @@ class Base:
 
     def __init__(self, id=None):
         """
-        ...
+        init
         """
 
         if id is None:
