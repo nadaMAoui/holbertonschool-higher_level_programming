@@ -2,7 +2,8 @@
 """
 Rectangle
 """
-from models.base import Base
+import json
+import os
 
 
 class Rectangle(Base):
