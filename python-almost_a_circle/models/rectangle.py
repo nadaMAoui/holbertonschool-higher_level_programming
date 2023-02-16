@@ -95,7 +95,8 @@ class Rectangle(Base):
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
             self.id, self.x, self.y, self.width, self.height)
 
-def update(self, *args, **kwargs):
+
+ def update(self, *args, **kwargs):
         """
         adding the public method def update
         that assigns an argument to each attribute
@@ -116,3 +117,12 @@ def update(self, *args, **kwargs):
             for key, value in kwargs.items():
                 if hasattr(self, key) is True:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """
+        Update the class Rectangle by adding the
+        public method def to_dictionary(self)
+        """
+        listsq = {'id': self.id, 'width': self.width, 'height': self.height,
+                  'x': self.x, 'y': self.y}
+        return listsq
