@@ -2,13 +2,12 @@
 """
 Rectangle
 """
-import json
-import os
+from models.base import Base
 
 
 class Rectangle(Base):
     """
-    main class Rectangle
+    Class rectangle
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -17,6 +16,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
+
 
     @property
     def width(self):
@@ -32,7 +32,6 @@ class Rectangle(Base):
     def x(self):
         """Get x"""
         return self.__x
-
     @property
     def y(self):
         """Get y"""
@@ -76,30 +75,32 @@ class Rectangle(Base):
 
     def area(self):
         """
-        calculate the area of rectangle
+        Area width * height
         """
         return self.width * self.height
 
+
     def display(self):
         """
-        print matrix
+        For i in j
         """
         for i in range(self.y):
             print()
         for j in range(self.height):
             print(" " * self.x + "#" * self.width)
 
+
     def __str__(self):
         """
-        overriding __str__ mthod
+        [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
             self.id, self.x, self.y, self.width, self.height)
 
 
- def update(self, *args, **kwargs):
+    def update(self, *args, **kwargs):
         """
-        adding the public method def update
+        adding the public method def update(self, *args):
         that assigns an argument to each attribute
         """
         if args:
