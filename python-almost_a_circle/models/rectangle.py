@@ -17,7 +17,6 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-
     @property
     def width(self):
         """get width"""
@@ -32,6 +31,7 @@ class Rectangle(Base):
     def x(self):
         """Get x"""
         return self.__x
+
     @property
     def y(self):
         """Get y"""
@@ -79,7 +79,6 @@ class Rectangle(Base):
         """
         return self.width * self.height
 
-
     def display(self):
         """
         For i in j
@@ -89,14 +88,12 @@ class Rectangle(Base):
         for j in range(self.height):
             print(" " * self.x + "#" * self.width)
 
-
     def __str__(self):
         """
         [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
             self.id, self.x, self.y, self.width, self.height)
-
 
     def update(self, *args, **kwargs):
         """
