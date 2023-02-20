@@ -5,17 +5,20 @@ the id attribute of all classes that extend
 from Base and avoid duplicate the same code.
 """
 
+from os import path
+import json
+
 
 class Base:
     """
-    base class
+    ...
     """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
         """
-        init
+        ...
         """
 
         if id is None:
