@@ -70,4 +70,4 @@ class TestBase(unittest.TestCase):
     def test_10(self):
         """Test number 10 for base"""
         ret = Base.to_json_string(None)
-        self.assertEqual(ret, "[]")
+        self.assertEqual(ret, "[]"))
