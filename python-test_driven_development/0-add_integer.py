@@ -4,6 +4,14 @@ This module performs the addition operation between two numbers,
 these numbers can be integers or floats.
 """
 
+import math
+
+x = float('NaN')
+if math.isnan(x):
+    print('x is NaN')
+else:
+    y = int(x)
+    print('y =', y)
 
 def add_integer(a, b=98):
     """Adds two numbers
