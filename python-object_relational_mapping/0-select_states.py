@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Python x MySQL : Listing data from a database using args """
+""" Python x MySQL : Listing data from a database using args .."""
 import MySQLdb
 from sys import argv
 
@@ -15,3 +15,4 @@ if __name__ == "__main__":
         print(state)
     c.close()
     db.close()
+
