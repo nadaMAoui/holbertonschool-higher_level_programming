@@ -17,7 +17,8 @@ if __name__ == "__main__":
                            user=username, passwd=password, db=database)
     cursor = conn.cursor()
 
-    query = "SELECT * FROM states WHERE name LIKE '{}' BINARY %s ORDER BY id ASC"
+    query = "SELECT * FROM states WHERE name LIKE '{}'COLLATE latin1_general_cs\
+                ORDER BY states.id".format(argv[4]))"
     cursor.execute(query, ('%' + state_name + '%',))
 
     rows = cursor.fetchall()
