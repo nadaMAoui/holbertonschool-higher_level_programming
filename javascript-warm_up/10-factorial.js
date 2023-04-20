@@ -15,4 +15,4 @@ const input = isNaN(num) ? 1 : num;
 
 const result = factorial(input);
 
-console.log('The factorial of', input, 'is:', result);
+console.log(result);
